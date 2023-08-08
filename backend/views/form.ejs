@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width,initial-scale=1.0">
+            <title>PFM</title>
+            
+        <link rel="stylesheet" href="/style1.css">
+    </head>
+        <body>
+
+            <section class="container">
+                <header>Details</header>
+                <form action="/details/<%=userid%>" method="post" class="form">
+                    <div class="input-box">
+                        <label>First Name</label>
+                        <input type="text" name="first" placeholder="Enter First Name" required/>
+                    </div>
+
+                    <div class="input-box">
+                        <label>Last Name</label>
+                        <input type="text" name="last" placeholder="Enter Last Name" required/>
+                    </div>
+
+                    <div class="column">
+                        <div class="input-box">
+                            <label>Phone Number</label>
+                            <input type="text" name="phno" placeholder="Enter Phone Number" required/>
+                        </div>
+
+                        <div class="input-box">
+                            <label>DOB</label>
+                            <input type="date" name="Dob" placeholder="Enter Date Of Birth"/>
+                        </div>
+                    </div>
+
+                    <div class="gender-box">
+                        <h3>Gender</h3>
+                        <div class="gender-option">
+                            <div class="gender">
+                                <input type="radio" id="check-male" name="gender" checked/>
+                                <label for="check-male">Male</label>
+                            </div>
+                            <div class="gender">
+                                <input type="radio" id="check-female" name="gender" />
+                                <label for="check-female">Female</label>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="input-box address">
+                        <label>Card 1</label>
+                        <div class="column">
+                            
+                        <input type="text" name="cash" placeholder="Enter Amount in card" required/>
+                            <div class="select-box" >
+                                <select name="cardtyp" required >
+                                    <option >Type of card</option>
+                                    <option >visa</option>
+                                    <option >master</option>
+                                    <option >rupay</option>
+                                    
+                                </select>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="input-box address" >
+                        <label>Card 2 (optional)</label>
+                        <div class="column">
+                            
+                        <input type="text" name="cash2" placeholder="Enter Amount in card" />
+                            <div class="select-box">
+                                <select name="cardtyp2">
+                                    <option >Type of card</option>
+                                    <option >visa</option>
+                                    <option >master</option>
+                                    <option >rupay</option>
+                                    
+                                </select>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="input-box address" >
+                        <label>Card 3 (optional)</label>
+                        <div class="column">
+                            
+                        <input type="text" name="cash3" placeholder="Enter Amount in card" />
+                            <div class="select-box">
+                                <select name="cardtyp3">
+                                    <option >Type of card</option>
+                                    <option >visa</option>
+                                    <option >master</option>
+                                    <option >rupay</option>
+                                </select>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="input-box address" >
+                        <label>Budget:</label>
+                        <div class="colum">
+                        
+                          <label>  FOOD </label>  <input type="text" name="f1" placeholder="Add food budget" required/>
+                        </div>
+                          <div class="colum">
+                          <label>  RENT </label>  <input type="text" name="r1" placeholder="Add rent budget" required />
+                        </div>
+                        <div class="colum">
+                            <label>  ELECTRONICS </label>  <input type="text" name="ele1" placeholder="Add electronics budget"  required/>
+                           </div>
+                            <div class="colum">
+                            <label>  CLOTHING </label>  <input type="text" name="c1" placeholder="Add clothing budget" required />
+                          </div>
+                          <div class="colum">
+                            <label>  EDUCATION </label>  <input type="text" name="edu1" placeholder="Add education budget" required />
+                          </div>
+                        
+                    
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </body>
+    </html>
