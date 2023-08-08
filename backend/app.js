@@ -11,8 +11,8 @@ const app =express()
 
 let usName='';
 
-
-mongoose.connect(process.env.MONGODB_URL,{useNewUrlParser:true,useUnifiedTopology:true})
+const url=process.env.MONGODB_URL;
+mongoose.connect(url,{useNewUrlParser:true,useUnifiedTopology:true})
     .then(()=>{console.log("connected with db");})
     .catch((e)=>{console.log(e);})
 
