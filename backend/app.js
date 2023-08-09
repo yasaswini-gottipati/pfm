@@ -105,7 +105,7 @@ app.post('/login',async(req,res)=>{
        }
        usName+=user._id;
        console.log(usName);
-       return res.redirect(`/home/${usName}`)
+       return res.redirect(`/home/${user._id}`)
        }
        catch(e){
         console.log(e);
